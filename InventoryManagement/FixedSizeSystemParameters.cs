@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace InventoryManagement
 {
@@ -16,6 +13,7 @@ namespace InventoryManagement
 
         private Component CurrentComponent { get; set; }
 
+        [DisplayName("Деталь")]
         public string ComponentName
         {
             get
@@ -24,8 +22,10 @@ namespace InventoryManagement
             }
         }
 
+        [DisplayName("Потребность")]
         public double Demand { get; set; }
 
+        [DisplayName("Размер заказа")]
         public double OptimalOrderSize
         {
             get
@@ -36,6 +36,7 @@ namespace InventoryManagement
             }
         }
 
+        [DisplayName("Время поставки")]
         public double SupplyTime
         {
             get
@@ -44,6 +45,7 @@ namespace InventoryManagement
             }
         }
 
+        [DisplayName("Задержка")]
         public double DelayTime
         {
             get
@@ -52,6 +54,7 @@ namespace InventoryManagement
             }
         }
 
+        [DisplayName("Дневное потребление")]
         public double DailyConsumption
         {
             get
@@ -60,6 +63,7 @@ namespace InventoryManagement
             }
         }
 
+        [DisplayName("Время расходования")]
         public int ConsumptionTime
         {
             get
@@ -68,6 +72,7 @@ namespace InventoryManagement
             }
         }
 
+        [DisplayName("Потребление за время поставки")]
         public double SupplyTimeConsumption
         {
             get
@@ -76,6 +81,7 @@ namespace InventoryManagement
             }
         }
 
+        [DisplayName("Макс потребление")]
         public double MaxConsumption
         {
             get
@@ -84,6 +90,7 @@ namespace InventoryManagement
             }
         }
 
+        [DisplayName("Гарантийный запас")]
         public double GuaranteeReserve
         {
             get
@@ -92,6 +99,7 @@ namespace InventoryManagement
             }
         }
 
+        [DisplayName("Порог запаса")]
         public double ThresholdLevel
         {
             get
@@ -100,6 +108,7 @@ namespace InventoryManagement
             }
         }
 
+        [DisplayName("Макс запас")]
         public double MaxReserve
         {
             get
@@ -108,6 +117,7 @@ namespace InventoryManagement
             }
         }
 
+        [DisplayName("Срок расходования до порога")]
         public double ConsumptionToThresholdTime
         {
             get

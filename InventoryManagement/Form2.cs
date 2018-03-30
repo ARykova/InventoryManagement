@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace InventoryManagement
@@ -19,6 +12,11 @@ namespace InventoryManagement
             chart2.Series[0].Points.DataBindXY(x2, y2);
             chart3.Series[0].Points.DataBindXY(x3, y3);
             chart4.Series[0].Points.DataBindXY(x4, y4);
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
